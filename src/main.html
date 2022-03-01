@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="main.css">    
     <script src="https://kit.fontawesome.com/38b5919f98.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <title>Portifólio Pessoal</title>
     
 </head>
 <body>
+
+    <!-- Inicio scroll-up btn -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- Fim scroll-up btn -->
 
     <!-- Inicio da Navbar -->
     <nav class="navbar">
@@ -19,12 +29,12 @@
                 <a href="#">Portifó<span>lio.</span></a>
             </div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Times</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#teams">Times</a></li>
+                <li><a href="#contact">Contatos</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars" src="icons/bars-solid.svg"></i>
@@ -34,14 +44,13 @@
     <!-- Fim da Navbar -->
 
     <!-- Início da section da home -->
-    
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Olá, meu nome é</div>
                 <div class="text-2">Augusto Prestes da Silva</div>
-                <div class="text-3">E sou um <span>Desenvolvedor FullStack</span></div>
-                <a href="#">Contratar</a>
+                <div class="text-3">E sou <span class="habilidades"></span></div>
+                <a href="#contact">Contratar</a>
             </div>
         </div>
     </section>
@@ -56,9 +65,9 @@
                     <img src="/src/img/59321380_1897784930327296_7387689614246412288_n.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">Me chamo Augusto e sou um <span>Desenvolvedor FullStack</span></div>
+                    <div class="text">Me chamo Augusto e sou um <span class="habilidades-2"></span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non sed dicta, voluptates aliquam sit natus totam expedita aperiam soluta iusto eveniet? Eum labore tempora cumque reiciendis soluta amet a debitis delectus sint libero. Rerum, eos. In deleniti, quasi enim, quae facere ad cumque corporis nihil amet distinctio, quis accusamus aliquid natus temporibus reiciendis saepe ab minima ex dignissimos adipisci?</p>
-                    <a href="#">Download CV</a>
+                    <a href="/src/data/Augusto Ribeiro Prestes da silva.pdf" download>Download CV</a>
                 </div>
             </div>
         </div>
@@ -95,8 +104,8 @@
         </div>
     </section>
     <!-- Fim da Section Services/Serviços -->
+
     <!-- Inicio da section Habilidades  -->
-    
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">Minhas Habilidades</h2>
@@ -146,15 +155,13 @@
             </div>
         </div>
     </section>
-
     <!-- Fim da section Habilidades  -->
 
     <!-- Inicio da section Time -->
-    
     <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">Colegas de Profissão</h2>
-            <div class="caroseul">
+            <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
                         <img src="/src/img/profile-dummy.png" alt="">
@@ -193,8 +200,73 @@
             </div>
         </div>
     </section>
-
     <!-- Fim da section Time -->
+
+    <!-- Inicio da section Contato -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Meus Contatos</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Entre em contato</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusamus necessitatibus sit minima, culpa vitae atque expedita alias assumenda quasi.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Nome</div>
+                                <div class="sub-title">Augusto Ribeiro Prestes da Silva</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Endereço</div>
+                                <div class="sub-title">Cidade Tiradentes, São Paulo - SP</div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">E-mail</div>
+                                <div class="sub-title">contatoaugustoprestes@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Me mande uma mensagem</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Nome" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="E-mail" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Assunto" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="descreva o Projeto" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim da section Contato -->
+
+    <!-- Inicio da sectio footer -->
+    <footer>
+        <span>Criado por <a href="#">Augusto Prestes</a> | <span class="far fa-copyright"></span> 2022 </span>
+    </footer>
+    <!-- Fim da sectio footer -->
 
     <script src="script.js"></script>
 
