@@ -237,21 +237,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Me mande uma mensagem</div>
-                    <form action="#">
+                    <form action="https://formsubmit.co/contatoaugustoprestes@gmail.com" method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nome" required>
+                                <input type="text" name="Nome" placeholder="Nome" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="E-mail" required>
+                                <input type="email" name="E-mail" placeholder="E-mail" required>
                             </div>
                         </div>
-                        <div class="field">
-                            <input type="text" placeholder="Assunto" required>
-                        </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="descreva o Projeto" required></textarea>
+                            <textarea cols="30" rows="10" name="Mensagem" placeholder="descreva o Projeto" required></textarea>
                         </div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/main.html">
                         <div class="button">
                             <button type="submit">Enviar</button>
                         </div>

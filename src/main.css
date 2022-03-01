@@ -584,7 +584,7 @@ section .title::before {
 }
 
 .contact .right form .textarea {
-    height:  80px;
+    height:  150px;
     width: 100%;
     
 }
