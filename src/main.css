@@ -359,6 +359,17 @@ section .title::before {
 
 }
 
+.services .serv-content .card .box .p-1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.services .serv-content .card .box .p-2 {
+    margin-top: 13px;
+    margin-bottom: 45px;
+}
+
+
 /* Estilizando o Habilidades do site */
 
 .skills .title::after {
