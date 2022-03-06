@@ -231,14 +231,14 @@ section .title::before {
     justify-content: space-between;
 } 
 
-.services, .teams {
+.services, .projects {
     color: #fff;
     background:#111 ;
 }
 
 /* Estilizando o About do site */
 
-.about, .services, .skills, .teams, .contact, footer {
+.about, .services, .skills, .projects, .contact, footer {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -310,12 +310,12 @@ section .title::before {
 /* Estilizando o Serviços do site */
 
 .services .title::before, 
-.teams .title::before {
+.projects .title::before {
     background: #fff;
 }
 
 .services .title::after,
-.teams .title::after {
+.projects .title::after {
     background: #111;
     content: "O que posso realizar";
 }
@@ -443,17 +443,17 @@ section .title::before {
     width: 40%;
 }
 .skills-content .right .mysql::before {
-    width: 40%;
+    width: 25%;
 }
 
 
 /* Estilizando o Colegas do site */
 
-.teams .title::after {
-    content: "Quem esteve comigo"
+.projects .title::after {
+    content: "Projetos Paralelos"
 }
 
-.teams .carousel .card {
+.projects .carousel .card {
     cursor: pointer;
     background: #222;
     border-radius: 6px;
@@ -462,28 +462,28 @@ section .title::before {
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover {
+.projects .carousel .card:hover {
     background: #7600a9;
 }
 
-.teams .carousel .card .box {
+.projects .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.teams .carousel .card:hover .box {
+.projects .carousel .card:hover .box {
     transform: scale(1.05);
 }
 
-.teams .carousel .card .text {
+.projects .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-.teams .carousel .card img {
+.projects .carousel .card img {
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -492,7 +492,7 @@ section .title::before {
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover img {
+.projects .carousel .card:hover img {
     border-color: #fff;
 }
 
