@@ -27,14 +27,14 @@ $(document).ready(() => {
     // Script de animacao
 
     var typed = new Typed(".habilidades", {
-        strings: ["Desenvolvedor FullStack", "Analista de Dados", "Programador Python"],
+        strings: ["Desenvolvedor FullStack", "Programador Python"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     })
 
     var typed = new Typed(".habilidades-2", {
-        strings: ["Desenvolvedor FullStack", "Analista de Dados", "Programador Python"],
+        strings: ["Desenvolvedor FullStack", "Programador Python"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

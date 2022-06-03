@@ -15,7 +15,7 @@ Data: 27/02/2022;
     border: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
+}meus 
 
 html {
     scroll-behavior: smooth;
@@ -373,7 +373,7 @@ section .title::before {
 /* Estilizando o Habilidades do site */
 
 .skills .title::after {
-    content: "Meus conhecimentos";
+    content: "Hard Skills";
 }
 
 .skills .skills-content .column {
@@ -448,7 +448,7 @@ section .title::before {
     width: 40%;
 }
 .skills-content .right .js::before {
-    width: 50%;
+    width: 65%;
 }
 .skills-content .right .py::before {
     width: 40%;
